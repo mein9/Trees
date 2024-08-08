@@ -1,15 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Trees
 {
-    public class Node<T>
+    public class Node<T>(T data)
     {
-        public T data;
-        public Node<T> left, right;
-
+        public T Data => data;
+        public Node<T>? Left, Right;
+        
     }
 }
